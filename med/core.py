@@ -9,7 +9,7 @@ from torchvision.utils import save_image
 
 # Cell
 def instance_sort(folder:(Path, L)):
-    "sort files by instance number"
+    "sort files by instance number from path"
     if isinstance(folder, Path): folder = get_dicom_files(folder)
     if isinstance(folder, L): folder = folder
     sorted_files = []
